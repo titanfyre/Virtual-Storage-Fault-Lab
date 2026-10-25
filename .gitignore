@@ -1,0 +1,13 @@
+/obj/
+/bin/
+/Private/
+*.sys
+*.cat
+*.inf
+*.cab
+*.pdb
+*.zip
+*.lib
+*.exe
+*.dll
+*.user
