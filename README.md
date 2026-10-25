@@ -6,7 +6,7 @@ Create a repeatable failure scenario without touching a physical drive. The priv
 
 ![Native application, explicitly synthetic preview](docs/app.png)
 
-**Engineering preview for Windows x64.** Microsoft signing and deployment qualification are separate release gates. The public preview contains the application, SDK, examples and installer source; it contains no unsigned driver or nonfunctional setup executable. See [validation status](docs/VALIDATION.md) before planning deployment.
+**Microsoft-signed evaluation bundle for Windows x64.** Application 0.1.1 includes the verified Microsoft-signed Storport driver 0.1.0.0 in self-contained UI and console installers, alongside the app, CLI, example and public user-mode sources. The signed package passed installation, runtime and removal checks on Windows 10 x64, normally and under Driver Verifier. See [validation status](docs/VALIDATION.md) for the tested boundary and remaining qualification.
 
 ## What you can test
 
@@ -28,11 +28,13 @@ For completion metadata, pair the lab disk with [Storage I/O Flight Recorder](ht
 ## Download and run
 
 1. Download the complete Windows x64 ZIP from [Releases](https://github.com/titanfyre/Virtual-Storage-Fault-Lab/releases) and extract it.
-2. Run **`StorageFaultLabApp.exe --preview`** for the labelled offline interface. No adapter is enumerated, disk opened or policy changed.
-3. Live operation requires the matching Microsoft-signed driver. When its installable bundle is published, run **`StorageFaultLabSetup.exe`**, choose **Install / reinstall**, and restart only if setup asks. Console deployment uses **`StorageFaultLabSetupConsole.exe /install`** or **`/uninstall`**. Source-only setup builds have no payload and reject installation.
-4. Open **`StorageFaultLabApp.exe` as administrator**. The app starts with faults disabled. Installing the virtual adapter exposes a volatile 64 MiB disk; partitioning/formatting it is a separate explicit lab operation.
+2. Run **`StorageFaultLabSetup.exe`** and choose **Install / reinstall**. Accept administrator elevation. The single EXE embeds its exact signed INF/CAT/SYS package; no separate driver download is needed.
+3. Restart Windows only if setup requests it. Console deployment uses **`StorageFaultLabSetupConsole.exe /install`** or **`/uninstall`**; exit code **3010** requests a manual restart.
+4. Open **`StorageFaultLabApp.exe` as administrator**. Faults start disabled. Installing the adapter exposes a volatile 64 MiB disk; partitioning/formatting it is a separate explicit lab operation.
 5. Choose a range, a failure interval and read/write direction. Select **Enable faults** only for a disposable test workload on this product's disk.
-6. Select **Clear faults** or close the application to release its policy. A crashed client loses its lease after 30 seconds. Uninstall removes only this product's adapter and package; the RAM disk's contents disappear.
+6. Select **Clear faults** or close the app to release its policy. A crashed client loses its lease after 30 seconds. Uninstall removes only this product's adapter and package; the RAM disk's contents disappear.
+
+For an offline look at the interface, run **`StorageFaultLabApp.exe --preview`**. This labelled synthetic preview does not enumerate an adapter, open a disk or change a policy. Installers verify the trusted Microsoft hardware-publisher catalog, exact product identity and INF/SYS membership before installation. They never enable test-signing or restart automatically.
 
 `StorageFaultLabCLI.exe --status` prints actual adapter counters without claiming the policy. `--preview` prints explicitly synthetic data.
 
@@ -107,7 +109,7 @@ docs/       Validation, operation and OEM integration
 
 For a **paid storage-error QA pilot, automated regression integration, a separately named driver, OEM redistribution rights or Windows compatibility maintenance**, add **`titancsa` on Discord**. Describe your workload, expected failure behavior, supported Windows builds and deployment volume. Agree acceptance tests and redistribution terms before production use; see [commercial integration](docs/COMMERCIAL.md).
 
-The public application/SDK/example/installer source is [MIT licensed](LICENSE). The private driver has separate binary evaluation and commercial terms. This preview has no enforced timer, paid activation or online quota. A Microsoft signature is a deployment prerequisite, not a guarantee of correctness, compatibility, demand or revenue.
+The public application/SDK/example/installer source is [MIT licensed](LICENSE). The private driver has separate binary evaluation and commercial terms. This evaluation build has no enforced trial timer, paid activation or online quota. A Microsoft signature is a deployment prerequisite, not a guarantee of correctness, compatibility, demand or revenue.
 
 Use only for authorized testing on systems you own or administer. The software is provided AS IS under its applicable license. You remain responsible for your workloads, backups and compliance with applicable law.
 
