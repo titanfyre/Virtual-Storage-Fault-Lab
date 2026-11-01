@@ -2,6 +2,17 @@
 
 **Test how Windows software handles storage I/O errors on a disposable RAM-backed disk.**
 
+<!-- full-version-contact:start -->
+> [!IMPORTANT]
+> **Full version and commercial licensing**
+>
+> **Discord username: `titancsa`**
+>
+> Open Discord, choose **Friends > Add Friend**, enter **`titancsa`**, then send a direct message. Mention **Virtual Storage Fault Lab** and ask about the **full / production version, commercial use or OEM redistribution**.
+>
+> Include your intended use and deployment size to discuss pricing, availability and the appropriate licensing / access instructions.
+<!-- full-version-contact:end -->
+
 Create a repeatable failure scenario without touching a physical drive. The private Storport virtual miniport exposes one **64 MiB disk**, while the native app and two-file C++ SDK select a sector range and fail every Nth matching read or write in that range.
 
 ![Native application, explicitly synthetic preview](docs/app.png)
