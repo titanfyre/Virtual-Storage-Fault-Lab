@@ -125,3 +125,10 @@ The public application/SDK/example/installer source is [MIT licensed](LICENSE). 
 Use only for authorized testing on systems you own or administer. The software is provided AS IS under its applicable license. You remain responsible for your workloads, backups and compliance with applicable law.
 
 Technical references: [Storport virtual miniport implementation](https://learn.microsoft.com/en-us/windows-hardware/drivers/storage/initialization-of-storage-virtual-miniport-drivers), [virtual miniport I/O](https://learn.microsoft.com/en-us/windows-hardware/drivers/ddi/storport/nc-storport-hw_startio), [storage design](https://learn.microsoft.com/en-us/windows-hardware/drivers/storage/).
+
+## Reading fault results
+
+Counters describe adapter commands, not the final outcome of each application
+operation. They do not identify individual retries. See [a workload logging
+example and interpretation limits](docs/OBSERVABILITY.md) before treating an
+injected command failure as an application-visible error.
