@@ -1,6 +1,6 @@
 # Validation and scope
 
-Application/SDK 0.1.1; Microsoft-signed Storport driver 0.1.0.0, Windows x64. The returned INF matches the submission, the protected PE image matches the qualified private candidate, and Microsoft catalog trust plus INF/SYS membership pass. Driver source remains private.
+Application/SDK 0.1.1; Microsoft-signed Storport driver 0.1.0.0, Windows x64. The returned INF matches the submission, the protected PE image matches the qualified private candidate, and Microsoft catalog trust plus INF/SYS membership pass. Demo/evaluation driver source is documented in [driver/README.md](../driver/README.md).
 
 ## Signed bundle checks
 

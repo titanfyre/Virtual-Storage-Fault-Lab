@@ -96,6 +96,12 @@ Errors include the failing stage, an English explanation and the Windows error c
 
 ## Build
 
+Demo/evaluation driver source is available; see [driver/README.md](driver/README.md) for
+build instructions and separate evaluation-source terms. Those terms apply to
+Titan-authored driver code. Third-party source licenses and existing application/SDK
+licenses remain applicable. Full/commercial implementation and private signing or
+activation material are excluded.
+
 Install Visual Studio 2022 Desktop C++ tools, CMake and a Windows SDK:
 
 ```powershell
@@ -105,7 +111,7 @@ Install Visual Studio 2022 Desktop C++ tools, CMake and a Windows SDK:
 .\Build.ps1 -DriverPackageDirectory C:\Signed\TitanStorageFaultLab
 ```
 
-Outputs are in `obj/Build/bin/Release`. The normal build and offline tests do not install a driver, create a disk or change Windows storage policy. The kernel implementation remains private; no WDK is required to build this public application.
+Outputs are in `obj/Build/bin/Release`. The normal build and offline tests do not install a driver, create a disk or change Windows storage policy. Evaluation driver source is documented in [driver/README.md](driver/README.md); no WDK is required to build this public application.
 
 ```text
 App/        Native UI and console
@@ -120,7 +126,7 @@ docs/       Validation, operation and OEM integration
 
 For a **paid storage-error QA pilot, automated regression integration, a separately named driver, OEM redistribution rights or Windows compatibility maintenance**, add **`titancsa` on Discord**. Describe your workload, expected failure behavior, supported Windows builds and deployment volume. Agree acceptance tests and redistribution terms before production use; see [commercial integration](docs/COMMERCIAL.md).
 
-The public application/SDK/example/installer source is [MIT licensed](LICENSE). The private driver has separate binary evaluation and commercial terms. This evaluation build has no enforced trial timer, paid activation or online quota. A Microsoft signature is a deployment prerequisite, not a guarantee of correctness, compatibility, demand or revenue.
+The public application/SDK/example/installer source is [MIT licensed](LICENSE). the prebuilt driver has separate binary evaluation and commercial terms. This evaluation build has no enforced trial timer, paid activation or online quota. A Microsoft signature is a deployment prerequisite, not a guarantee of correctness, compatibility, demand or revenue.
 
 Use only for authorized testing on systems you own or administer. The software is provided AS IS under its applicable license. You remain responsible for your workloads, backups and compliance with applicable law.
 

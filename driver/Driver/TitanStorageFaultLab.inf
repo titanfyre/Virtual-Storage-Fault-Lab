@@ -1,0 +1,46 @@
+[Version]
+Signature="$WINDOWS NT$"
+Class=SCSIAdapter
+ClassGuid={4D36E97B-E325-11CE-BFC1-08002BE10318}
+Provider=%Provider%
+CatalogFile=TitanStorageFaultLab.cat
+DriverVer=10/25/2026,0.1.0.0
+PnpLockdown=1
+[Manufacturer]
+%Provider%=Models,NTamd64.10.0...19041
+[Models.NTamd64.10.0...19041]
+%Device%=Install,ROOT\TitanStorageFaultLab
+[DestinationDirs]
+DriverFiles=13
+[SourceDisksNames]
+1=%Disk%
+[SourceDisksFiles]
+TitanStorageFaultLab.sys=1
+[Install.NT]
+CopyFiles=DriverFiles
+[DriverFiles]
+TitanStorageFaultLab.sys
+[Install.NT.HW]
+AddReg=Security
+[Security]
+HKR,,Security,0,"D:P(A;;GA;;;SY)(A;;GA;;;BA)"
+HKR,,DeviceCharacteristics,0x00010001,0x00000100
+[Install.NT.Services]
+AddService=TitanStorageFaultLab,0x00000002,Service
+[Service]
+DisplayName=%Device%
+ServiceType=1
+StartType=3
+ErrorControl=1
+ServiceBinary=%13%\TitanStorageFaultLab.sys
+LoadOrderGroup=SCSI Miniport
+AddReg=MiniportParameters
+[MiniportParameters]
+; AdapterInterfaceType Internal=0: register this miniport for PnP initialization.
+HKR,"Parameters\PnpInterface","0",0x00010001,1
+; STORAGE_BUS_TYPE BusTypeVirtual=14; the disk has no physical/file backing.
+HKR,"Parameters","BusType",0x00010001,14
+[Strings]
+Provider="Titanfyre"
+Device="Titan Storage Fault Lab RAM adapter"
+Disk="Titan Storage Fault Lab installation media"
