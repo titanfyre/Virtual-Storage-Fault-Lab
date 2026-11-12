@@ -1,0 +1,21 @@
+{
+  "project": "Virtual-Storage-Fault-Lab",
+  "packages": [
+    {
+      "directory": "Virtual-Storage-Fault-Lab-CPP-vcpkg",
+      "central_registry_status": "not_published",
+      "distribution": "GitHub source and downloadable release artifacts"
+    },
+    {
+      "directory": "Virtual-Storage-Fault-Lab-CPP-conan",
+      "central_registry_status": "not_published",
+      "distribution": "GitHub source and downloadable release artifacts"
+    },
+    {
+      "directory": "Virtual-Storage-Fault-Lab-CPP-nuget",
+      "central_registry_status": "not_published",
+      "distribution": "GitHub source and downloadable release artifacts"
+    }
+  ],
+  "notes": "Registry accounts or community acceptance are separate. No missing language binding is represented as implemented."
+}
