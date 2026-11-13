@@ -1,0 +1,9 @@
+name: virtual_storage_fault_lab
+description: Direct Windows x64 Virtual-Storage-Fault-Lab SDK with native operations and exact uint64 identifiers.
+version: 1.0.0
+homepage: https://github.com/titanfyre/Virtual-Storage-Fault-Lab
+repository: https://github.com/titanfyre/Virtual-Storage-Fault-Lab
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+platforms:
+  windows:

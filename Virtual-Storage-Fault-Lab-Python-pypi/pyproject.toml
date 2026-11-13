@@ -1,0 +1,18 @@
+[build-system]
+requires=["setuptools>=77","wheel>=0.43"]
+build-backend="setuptools.build_meta"
+[project]
+name="virtual-storage-fault-lab"
+version="1.0.0"
+description="Windows x64 Virtual-Storage-Fault-Lab direct SDK"
+requires-python=">=3.10"
+license="MIT"
+readme="README.md"
+[project.urls]
+Repository="https://github.com/titanfyre/Virtual-Storage-Fault-Lab"
+[tool.setuptools]
+packages=["virtual_storage_fault_lab"]
+[tool.setuptools.package-data]
+virtual_storage_fault_lab=["*.dll"]
+[tool.setuptools.data-files]
+"share/virtual-storage-fault-lab/docs"=["docs/*","LICENSE"]
