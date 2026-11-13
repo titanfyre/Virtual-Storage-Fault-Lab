@@ -90,6 +90,12 @@
       "name": "VirtualStorageFaultLab",
       "version": "1.0.0",
       "distribution": "Documented native SDK; registry receipt tracked independently"
+    },
+    {
+      "directory": "packaging/conda",
+      "language": "Python",
+      "registry": "conda-forge",
+      "distribution": "Source-build recipe; official review and custom channel availability reported separately"
     }
   ],
   "notes": "Registry accounts or community acceptance are separate. No missing language binding is represented as implemented.",
@@ -101,7 +107,7 @@
     "CPP/vcpkg": {
       "status": "published_custom_registry",
       "registry": "https://github.com/TitanCSA/vcpkg-registry",
-      "baseline": "33fd43f72d7137f6ebaac4c1eeab001f66bf3a98",
+      "baseline": "9a706cf6992544778eb26a8b4244e303292f1ce6",
       "port": "virtual-storage-fault-lab",
       "microsoft_curated_registry": false,
       "legacy_port": "virtual-storage-fault-lab-sdk",
@@ -114,6 +120,8 @@
       "status": "public_recipe_builds_locally",
       "conan_center": false,
       "directory": "Virtual-Storage-Fault-Lab-CPP-conan",
+      "local_recipe_consumer_verified": true,
+      "minimum_cppstd": 17,
       "github_directory": "packaging/native"
     },
     "CPP/nuget": {
@@ -122,46 +130,179 @@
       "version": "0.1.1",
       "registry_published": false,
       "consumer_build_verified": true,
-      "documentation_bundled": true
+      "documentation_bundled": true,
+      "publication_on_hold_by_owner": true
     },
     "NET/nuget": {
-      "status": "binding_not_implemented"
+      "status": "built_verified_publication_on_hold_by_owner",
+      "name": "VirtualStorageFaultLab.SDK",
+      "version": "1.0.0",
+      "directory": "Virtual-Storage-Fault-Lab-NET-nuget",
+      "registry_published": false,
+      "documentation_bundled": true,
+      "url": null,
+      "public_consumer_verified": false,
+      "module": "virtual_storage_fault_lab",
+      "dll_name": "VirtualStorageFaultLabJsonSDK.dll",
+      "api_prefix": "virtual_storage_fault_lab_json_",
+      "publication_on_hold_by_owner": true
     },
     "Python/pypi": {
-      "status": "binding_not_implemented"
+      "status": "built_fixture_and_production_verified",
+      "name": "virtual-storage-fault-lab",
+      "version": "1.0.0",
+      "directory": "Virtual-Storage-Fault-Lab-Python-pypi",
+      "registry_published": false,
+      "documentation_bundled": true,
+      "url": null,
+      "public_consumer_verified": false,
+      "module": "virtual_storage_fault_lab",
+      "dll_name": "VirtualStorageFaultLabJsonSDK.dll",
+      "api_prefix": "virtual_storage_fault_lab_json_"
     },
     "Python/conda-forge": {
-      "status": "binding_not_implemented"
+      "status": "built_tested_requires_source_publication_and_official_review",
+      "name": "virtual-storage-fault-lab",
+      "version": "1.0.0",
+      "directory": "Virtual-Storage-Fault-Lab-Python-conda-forge",
+      "registry_published": false,
+      "documentation_bundled": true,
+      "url": null,
+      "public_consumer_verified": false,
+      "module": "virtual_storage_fault_lab",
+      "dll_name": "VirtualStorageFaultLabJsonSDK.dll",
+      "api_prefix": "virtual_storage_fault_lab_json_",
+      "recipe_format": "v1",
+      "v1_source_build_tests_passed": true,
+      "personal_maintainer_confirmation_required": true,
+      "official_review_status": "v1_recipe_prepared_requires_submission_or_existing_pr_update",
+      "github_directory": "packaging/conda"
     },
     "Rust/cargo": {
-      "status": "binding_not_implemented"
+      "status": "published_install_verified",
+      "name": "virtual-storage-fault-lab",
+      "version": "1.0.0",
+      "directory": "Virtual-Storage-Fault-Lab-Rust-cargo",
+      "registry_published": true,
+      "documentation_bundled": true,
+      "url": "https://crates.io/crates/virtual-storage-fault-lab",
+      "public_consumer_verified": true,
+      "module": "virtual_storage_fault_lab",
+      "dll_name": "VirtualStorageFaultLabJsonSDK.dll",
+      "api_prefix": "virtual_storage_fault_lab_json_"
     },
     "JavaScript/npm": {
-      "status": "binding_not_implemented"
+      "status": "awaiting_browser_publication_authentication",
+      "name": "virtual-storage-fault-lab",
+      "version": "1.0.0",
+      "directory": "Virtual-Storage-Fault-Lab-JavaScript-npm",
+      "registry_published": false,
+      "documentation_bundled": true,
+      "url": "https://www.npmjs.com/package/virtual-storage-fault-lab",
+      "public_consumer_verified": false,
+      "module": "virtual_storage_fault_lab",
+      "dll_name": "VirtualStorageFaultLabJsonSDK.dll",
+      "api_prefix": "virtual_storage_fault_lab_json_"
     },
     "Java/maven": {
-      "status": "binding_not_implemented"
+      "status": "published_install_verified",
+      "name": "virtual-storage-fault-lab",
+      "version": "1.0.0",
+      "directory": "Virtual-Storage-Fault-Lab-Java-maven",
+      "registry_published": true,
+      "documentation_bundled": true,
+      "url": "https://central.sonatype.com/artifact/io.github.titancsa/virtual-storage-fault-lab/1.0.0",
+      "public_consumer_verified": true,
+      "module": "virtual_storage_fault_lab",
+      "dll_name": "VirtualStorageFaultLabJsonSDK.dll",
+      "api_prefix": "virtual_storage_fault_lab_json_",
+      "coordinates": "io.github.titancsa:virtual-storage-fault-lab:1.0.0",
+      "java_package": "titancsa.products.virtual_storage_fault_lab"
     },
     "Java/jitpack": {
-      "status": "binding_not_implemented"
+      "status": "published_install_verified",
+      "name": "virtual-storage-fault-lab",
+      "version": "java-sdk-v1.0.0",
+      "directory": "Virtual-Storage-Fault-Lab-Java-maven",
+      "registry_published": true,
+      "documentation_bundled": true,
+      "url": "https://jitpack.io/#titanfyre/Virtual-Storage-Fault-Lab/java-sdk-v1.0.0",
+      "public_consumer_verified": true,
+      "module": "virtual_storage_fault_lab",
+      "dll_name": "VirtualStorageFaultLabJsonSDK.dll",
+      "api_prefix": "virtual_storage_fault_lab_json_",
+      "coordinates": "com.github.titanfyre:Virtual-Storage-Fault-Lab:java-sdk-v1.0.0",
+      "java_package": "titancsa.products.virtual_storage_fault_lab"
     },
     "Go/modules": {
-      "status": "binding_not_implemented"
+      "status": "published_install_verified",
+      "name": "virtual-storage-fault-lab",
+      "version": "v1.0.0",
+      "directory": "Virtual-Storage-Fault-Lab-Go-modules",
+      "registry_published": true,
+      "documentation_bundled": true,
+      "url": "https://pkg.go.dev/github.com/titanfyre/Virtual-Storage-Fault-Lab/Virtual-Storage-Fault-Lab-Go-modules@v1.0.0",
+      "public_consumer_verified": true,
+      "module": "github.com/titanfyre/Virtual-Storage-Fault-Lab/Virtual-Storage-Fault-Lab-Go-modules",
+      "dll_name": "VirtualStorageFaultLabJsonSDK.dll",
+      "api_prefix": "virtual_storage_fault_lab_json_"
     },
     "Go/pkg-go-dev": {
-      "status": "binding_not_implemented"
+      "status": "indexed_verified",
+      "url": "https://pkg.go.dev/github.com/titanfyre/Virtual-Storage-Fault-Lab/Virtual-Storage-Fault-Lab-Go-modules@v1.0.0"
     },
     "PowerShell/gallery": {
-      "status": "binding_not_implemented"
+      "status": "published_install_verified",
+      "name": "VirtualStorageFaultLab",
+      "version": "1.0.0",
+      "directory": "Virtual-Storage-Fault-Lab-PowerShell-gallery",
+      "registry_published": true,
+      "documentation_bundled": true,
+      "url": "https://www.powershellgallery.com/packages/VirtualStorageFaultLab/1.0.0",
+      "public_consumer_verified": true,
+      "module": "virtual_storage_fault_lab",
+      "dll_name": "VirtualStorageFaultLabJsonSDK.dll",
+      "api_prefix": "virtual_storage_fault_lab_json_"
     },
     "Dart/pub-dev": {
-      "status": "binding_not_implemented"
+      "status": "built_fixture_and_production_verified",
+      "name": "virtual_storage_fault_lab",
+      "version": "1.0.0",
+      "directory": "Virtual-Storage-Fault-Lab-Dart-pub-dev",
+      "registry_published": false,
+      "documentation_bundled": true,
+      "url": null,
+      "public_consumer_verified": false,
+      "module": "virtual_storage_fault_lab",
+      "dll_name": "VirtualStorageFaultLabJsonSDK.dll",
+      "api_prefix": "virtual_storage_fault_lab_json_"
     },
     "Ruby/rubygems": {
-      "status": "binding_not_implemented"
+      "status": "published_install_verified",
+      "name": "virtual-storage-fault-lab",
+      "version": "1.0.0",
+      "directory": "Virtual-Storage-Fault-Lab-Ruby-rubygems",
+      "registry_published": true,
+      "documentation_bundled": true,
+      "url": "https://rubygems.org/gems/virtual-storage-fault-lab",
+      "public_consumer_verified": true,
+      "module": "virtual_storage_fault_lab",
+      "dll_name": "VirtualStorageFaultLabJsonSDK.dll",
+      "api_prefix": "virtual_storage_fault_lab_json_"
     },
     "PHP/packagist": {
-      "status": "binding_not_implemented"
+      "status": "composer_source_and_tag_published",
+      "name": "titancsa/virtual-storage-fault-lab",
+      "version": "1.0.0",
+      "directory": "Virtual-Storage-Fault-Lab-PHP-packagist",
+      "registry_published": false,
+      "documentation_bundled": true,
+      "url": "https://packagist.org/packages/titancsa/virtual-storage-fault-lab",
+      "public_consumer_verified": false,
+      "module": "virtual_storage_fault_lab",
+      "dll_name": "VirtualStorageFaultLabJsonSDK.dll",
+      "api_prefix": "virtual_storage_fault_lab_json_",
+      "repository": "https://github.com/TitanCSA/virtual-storage-fault-lab-php"
     }
   },
   "coverage_note": "Missing language bindings are explicitly listed. Published GitHub archives are distinct from central registry acceptance. Local organized SDK folders are retained."
