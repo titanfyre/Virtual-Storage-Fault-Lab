@@ -1,8 +1,6 @@
 # Virtual-Storage-Fault-Lab .NET8 SDK
 
-Package ID `VirtualStorageFaultLab.SDK`. NuGet upload remains on hold at owner request.
-
-```csharp
+Package ID `VirtualStorageFaultLab.SDK`. ```csharp
 using var client=new TitanCSA.Products.VirtualStorageFaultLab.Client();
 string statusJson=client.Call("status", "{}");
 ```

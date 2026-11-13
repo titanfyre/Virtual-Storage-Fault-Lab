@@ -5,11 +5,11 @@ Current source layout and registry coverage. A GitHub download is distinct from 
 | Target | Status | Package / documentation |
 | --- | --- | --- |
 | CPP/vcpkg | published_custom_registry | virtual-storage-fault-lab |
-| CPP/conan | public_recipe_builds_locally |  [Source](packaging/native/) |
+| CPP/conan | published_custom_source_index | [virtual-storage-fault-lab](https://github.com/TitanCSA/sdk-packages/tree/089bc73095aa8eda89bacbe10d0b9e58394b0207/conan-index) [Source](packaging/native/) |
 | CPP/nuget | paused_pending_owner_email_confirmation | Virtual-Storage-Fault-Lab.Native |
 | NET/nuget | built_verified_publication_on_hold_by_owner | VirtualStorageFaultLab.SDK [Source](Virtual-Storage-Fault-Lab-NET-nuget/) |
 | Python/pypi | built_fixture_and_production_verified | virtual-storage-fault-lab [Source](Virtual-Storage-Fault-Lab-Python-pypi/) |
-| Python/conda-forge | built_tested_requires_source_publication_and_official_review | virtual-storage-fault-lab [Source](packaging/conda/) |
+| Python/conda-forge | custom_channel_install_verified_requires_conda_forge_review | [virtual-storage-fault-lab](https://raw.githubusercontent.com/TitanCSA/sdk-packages/089bc73095aa8eda89bacbe10d0b9e58394b0207/conda-channel) [Source](packaging/conda/) |
 | Rust/cargo | published_install_verified | [virtual-storage-fault-lab](https://crates.io/crates/virtual-storage-fault-lab) [Source](Virtual-Storage-Fault-Lab-Rust-cargo/) |
 | JavaScript/npm | awaiting_browser_publication_authentication | [virtual-storage-fault-lab](https://www.npmjs.com/package/virtual-storage-fault-lab) [Source](Virtual-Storage-Fault-Lab-JavaScript-npm/) |
 | Java/maven | published_install_verified | [virtual-storage-fault-lab](https://central.sonatype.com/artifact/io.github.titancsa/virtual-storage-fault-lab/1.0.0) [Source](Virtual-Storage-Fault-Lab-Java-maven/) |
