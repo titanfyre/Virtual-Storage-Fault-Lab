@@ -11,7 +11,7 @@ Current source layout and registry coverage. A GitHub download is distinct from 
 | Python/pypi | built_fixture_and_production_verified | virtual-storage-fault-lab [Source](Virtual-Storage-Fault-Lab-Python-pypi/) |
 | Python/conda-forge | custom_channel_install_verified_requires_conda_forge_review | [virtual-storage-fault-lab](https://raw.githubusercontent.com/TitanCSA/sdk-packages/089bc73095aa8eda89bacbe10d0b9e58394b0207/conda-channel) [Source](packaging/conda/) |
 | Rust/cargo | published_install_verified | [virtual-storage-fault-lab](https://crates.io/crates/virtual-storage-fault-lab) [Source](Virtual-Storage-Fault-Lab-Rust-cargo/) |
-| JavaScript/npm | awaiting_browser_publication_authentication | [virtual-storage-fault-lab](https://www.npmjs.com/package/virtual-storage-fault-lab) [Source](Virtual-Storage-Fault-Lab-JavaScript-npm/) |
+| JavaScript/npm | registry_publication_requires_action | [virtual-storage-fault-lab](https://www.npmjs.com/package/virtual-storage-fault-lab) [Source](Virtual-Storage-Fault-Lab-JavaScript-npm/) |
 | Java/maven | published_install_verified | [virtual-storage-fault-lab](https://central.sonatype.com/artifact/io.github.titancsa/virtual-storage-fault-lab/1.0.0) [Source](Virtual-Storage-Fault-Lab-Java-maven/) |
 | Java/jitpack | published_install_verified | [virtual-storage-fault-lab](https://jitpack.io/#titanfyre/Virtual-Storage-Fault-Lab/java-sdk-v1.0.0) [Source](Virtual-Storage-Fault-Lab-Java-maven/) |
 | Go/modules | published_install_verified | [virtual-storage-fault-lab](https://pkg.go.dev/github.com/titanfyre/Virtual-Storage-Fault-Lab/Virtual-Storage-Fault-Lab-Go-modules@v1.0.0) [Source](Virtual-Storage-Fault-Lab-Go-modules/) |
