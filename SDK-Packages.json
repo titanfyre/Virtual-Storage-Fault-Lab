@@ -68,6 +68,14 @@
       "distribution": "Documented native SDK; registry receipt tracked independently"
     },
     {
+      "directory": "Virtual-Storage-Fault-Lab-JavaScript-npm",
+      "language": "JavaScript",
+      "registry": "npm",
+      "name": "virtual-storage-fault-lab",
+      "version": "1.0.0",
+      "distribution": "Documented native SDK; registry receipt tracked independently"
+    },
+    {
       "directory": "Virtual-Storage-Fault-Lab-NET-nuget",
       "language": "NET",
       "registry": "nuget",
