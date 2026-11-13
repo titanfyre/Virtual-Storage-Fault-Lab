@@ -6,24 +6,24 @@ Choisis le paquet a installer. Installe son outil habituel (Node.js/npm, Python/
 
 Les SDK natifs sont destines a Windows x64. Java utilise Java22+ (Kotlin passe par le SDK Java). Flutter utilise le SDK Dart ; le chargement de la DLL doit etre configure dans l application. AutoHotInterceptor .NET utilise .NET Framework4.8.
 
-| Paquet | Registre | Disponibilite | Installation / utilisation |
-| --- | --- | --- | --- |
-| `virtual-storage-fault-lab` | vcpkg | Registre TitanCSA disponible (configuration ci-dessous) | `vcpkg install virtual-storage-fault-lab:x64-windows` |
-| `virtual-storage-fault-lab` | Conan | Registre TitanCSA disponible (configuration ci-dessous) | `conan install --requires=virtual-storage-fault-lab/0.1.1 -r titancsa --build=missing -s compiler.cppstd=17` |
-| `Virtual-Storage-Fault-Lab.Native` | NuGet | Publie et verifie | `Install-Package Virtual-Storage-Fault-Lab.Native -Version 0.1.1` |
-| `VirtualStorageFaultLab.SDK` | NuGet | Publie et verifie | `dotnet add package VirtualStorageFaultLab.SDK --version 1.0.0` |
-| `virtual_storage_fault_lab` | PyPI | Pas encore disponible / validation en cours | Commande prevue apres publication : `python -m pip install virtual-storage-fault-lab==1.0.0` |
-| `virtual-storage-fault-lab` | Conda | Canal TitanCSA disponible ; acceptation conda-forge encore en attente | `conda install --override-channels -c https://raw.githubusercontent.com/TitanCSA/sdk-packages/089bc73095aa8eda89bacbe10d0b9e58394b0207/conda-channel -c conda-forge virtual-storage-fault-lab` |
-| `virtual_storage_fault_lab` | crates.io | Publie et verifie | `cargo add virtual-storage-fault-lab@1.0.0` |
-| `virtual_storage_fault_lab` | npm | Pas encore disponible / validation en cours | Commande prevue apres publication : `npm install virtual-storage-fault-lab@1.0.0` |
-| `io.github.titancsa:virtual-storage-fault-lab` | Maven Central | Publie et verifie | `io.github.titancsa:virtual-storage-fault-lab:1.0.0 (pom.xml / Gradle)` |
-| `com.github.titanfyre:Virtual-Storage-Fault-Lab` | JitPack | Publie et verifie | `com.github.titanfyre:Virtual-Storage-Fault-Lab:java-sdk-v1.0.0 (avec le depot JitPack)` |
-| `github.com/titanfyre/Virtual-Storage-Fault-Lab/Virtual-Storage-Fault-Lab-Go-modules` | Go Modules | Publie et verifie | `go get github.com/titanfyre/Virtual-Storage-Fault-Lab/Virtual-Storage-Fault-Lab-Go-modules@v1.0.0` |
-| `github.com/titanfyre/Virtual-Storage-Fault-Lab/Virtual-Storage-Fault-Lab-Go-modules` | pkg.go.dev | Publie et verifie | `Documentation : https://pkg.go.dev/github.com/titanfyre/Virtual-Storage-Fault-Lab/Virtual-Storage-Fault-Lab-Go-modules@v1.0.0` |
-| `virtual_storage_fault_lab` | PowerShell Gallery | Publie et verifie | `Install-Module VirtualStorageFaultLab -RequiredVersion 1.0.0 -Scope CurrentUser` |
-| `virtual_storage_fault_lab` | pub.dev | Pas encore disponible / validation en cours | Commande prevue apres publication : `dart pub add virtual_storage_fault_lab:1.0.0` |
-| `virtual_storage_fault_lab` | RubyGems | Publie et verifie | `gem install virtual-storage-fault-lab -v 1.0.0` |
-| `virtual_storage_fault_lab` | Packagist | Pas encore disponible / validation en cours | Commande prevue apres publication : `composer require titancsa/virtual-storage-fault-lab:1.0.0` |
+| Registre | Paquet | Installation / utilisation |
+| --- | --- | --- |
+| vcpkg | `virtual-storage-fault-lab` | `vcpkg install virtual-storage-fault-lab:x64-windows` |
+| Conan | `virtual-storage-fault-lab` | `conan install --requires=virtual-storage-fault-lab/0.1.1 -r titancsa --build=missing -s compiler.cppstd=17` |
+| NuGet | `Virtual-Storage-Fault-Lab.Native` | `Install-Package Virtual-Storage-Fault-Lab.Native -Version 0.1.1` |
+| NuGet | `VirtualStorageFaultLab.SDK` | `dotnet add package VirtualStorageFaultLab.SDK --version 1.0.0` |
+| PyPI | `virtual_storage_fault_lab` | Commande prevue apres publication : `python -m pip install virtual-storage-fault-lab==1.0.0` |
+| Conda | `virtual-storage-fault-lab` | `conda install --override-channels -c https://raw.githubusercontent.com/TitanCSA/sdk-packages/089bc73095aa8eda89bacbe10d0b9e58394b0207/conda-channel -c conda-forge virtual-storage-fault-lab` (canal TitanCSA) |
+| crates.io | `virtual_storage_fault_lab` | `cargo add virtual-storage-fault-lab@1.0.0` |
+| npm | `virtual_storage_fault_lab` | Commande prevue apres publication : `npm install virtual-storage-fault-lab@1.0.0` |
+| Maven Central | `io.github.titancsa:virtual-storage-fault-lab` | `io.github.titancsa:virtual-storage-fault-lab:1.0.0 (pom.xml / Gradle)` |
+| JitPack | `com.github.titanfyre:Virtual-Storage-Fault-Lab` | `com.github.titanfyre:Virtual-Storage-Fault-Lab:java-sdk-v1.0.0 (avec le depot JitPack)` |
+| Go Modules | `github.com/titanfyre/Virtual-Storage-Fault-Lab/Virtual-Storage-Fault-Lab-Go-modules` | `go get github.com/titanfyre/Virtual-Storage-Fault-Lab/Virtual-Storage-Fault-Lab-Go-modules@v1.0.0` |
+| pkg.go.dev | `github.com/titanfyre/Virtual-Storage-Fault-Lab/Virtual-Storage-Fault-Lab-Go-modules` | `Documentation : https://pkg.go.dev/github.com/titanfyre/Virtual-Storage-Fault-Lab/Virtual-Storage-Fault-Lab-Go-modules@v1.0.0` |
+| PowerShell Gallery | `virtual_storage_fault_lab` | `Install-Module VirtualStorageFaultLab -RequiredVersion 1.0.0 -Scope CurrentUser` |
+| pub.dev | `virtual_storage_fault_lab` | Commande prevue apres publication : `dart pub add virtual_storage_fault_lab:1.0.0` |
+| RubyGems | `virtual_storage_fault_lab` | `gem install virtual-storage-fault-lab -v 1.0.0` |
+| Packagist | `virtual_storage_fault_lab` | Commande prevue apres publication : `composer require titancsa/virtual-storage-fault-lab:1.0.0` |
 
 ## Configuration vcpkg et Conan
 
