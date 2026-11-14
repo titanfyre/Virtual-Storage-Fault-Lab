@@ -239,13 +239,13 @@
       "api_prefix": "virtual_storage_fault_lab_json_"
     },
     "Dart/pub-dev": {
-      "status": "built_fixture_and_production_verified",
+      "status": "submitted_requires_public_verification",
       "name": "virtual_storage_fault_lab",
       "version": "1.0.0",
       "directory": "Virtual-Storage-Fault-Lab-Dart-pub-dev",
       "registry_published": false,
       "documentation_bundled": true,
-      "url": null,
+      "url": "https://pub.dev/packages/virtual_storage_fault_lab",
       "public_consumer_verified": false,
       "module": "virtual_storage_fault_lab",
       "dll_name": "VirtualStorageFaultLabJsonSDK.dll",
