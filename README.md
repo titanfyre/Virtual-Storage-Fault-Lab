@@ -150,7 +150,7 @@ Les sources, licences, guides API et exemples sont regroupes dans [le depot SDK 
 | PowerShell Gallery | `VirtualStorageFaultLab` | `Install-Module VirtualStorageFaultLab -RequiredVersion 1.0.0 -Scope CurrentUser` |
 | pub.dev | `virtual_storage_fault_lab` | Commande prevue apres publication : `dart pub add virtual_storage_fault_lab:1.0.0` |
 | RubyGems | `virtual-storage-fault-lab` | `gem install virtual-storage-fault-lab -v 1.0.0` |
-| Packagist | `titancsa/virtual-storage-fault-lab` | Commande prevue apres publication : `composer require titancsa/virtual-storage-fault-lab:1.0.0` |
+| Packagist | `titancsa/virtual-storage-fault-lab` | `composer require titancsa/virtual-storage-fault-lab:1.0.0` |
 
 Pour vcpkg et Conan, configure d abord le registre TitanCSA avec [le guide complet](https://github.com/TitanCSA/sdk-packages/tree/main/projects/Virtual-Storage-Fault-Lab/README.md). Le guide explique aussi Maven/Gradle, les prerequis et le chargement des DLL. Les pilotes/applications du produit sont installes separement. Les commandes marquees prevues ne sont pas encore disponibles.
 
