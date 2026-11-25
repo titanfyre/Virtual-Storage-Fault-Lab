@@ -1,5 +1,11 @@
 # Virtual Storage Fault Lab - Windows Kernel Virtual Disk & C++ SDK
 
+<!-- simple-start:start -->
+See how an app reacts when reads or writes fail.
+
+**Start here.** Follow the lab example on the included disposable memory disk.
+<!-- simple-start:end -->
+
 <!-- full-version-contact:start -->
 > [!IMPORTANT]
 > **Full version and commercial licensing**
@@ -169,5 +175,3 @@ Les anciens imports Go et versions JitPack gardent leurs tags. Pour les ancienne
 <!-- central-sdk-packages:end -->
 
 ## Commercial integration and support
-
-
