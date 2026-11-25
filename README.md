@@ -3,7 +3,11 @@
 <!-- simple-start:start -->
 See how an app reacts when reads or writes fail.
 
-**Start here.** Follow the lab example on the included disposable memory disk.
+[First steps](#first-steps) · [Develop](#sdk-and-packages) · [Maintain](https://github.com/TitanCSA/sdk-packages/blob/main/CONTRIBUTING.md)
+
+## First steps
+
+Follow the lab example on the included disposable memory disk.
 <!-- simple-start:end -->
 
 <!-- full-version-contact:start -->
@@ -146,32 +150,11 @@ example and interpretation limits](docs/OBSERVABILITY.md) before treating an
 injected command failure as an application-visible error.
 
 <!-- central-sdk-packages:start -->
-## Paquets et installation
+<a name="paquets-et-installation"></a>
 
-Les sources, licences, guides API et exemples sont regroupes dans [le depot SDK dedie](https://github.com/TitanCSA/sdk-packages/tree/main/projects/Virtual-Storage-Fault-Lab). Choisis le paquet a installer puis execute sa commande dans son dossier.
+## SDK and packages
 
-| Registre | Paquet | Installation / utilisation |
-| --- | --- | --- |
-| vcpkg | `virtual-storage-fault-lab` | `vcpkg install virtual-storage-fault-lab:x64-windows` |
-| Conan | `virtual-storage-fault-lab` | `conan install --requires=virtual-storage-fault-lab/0.1.1 -r titancsa --build=missing -s compiler.cppstd=17` |
-| NuGet | `Virtual-Storage-Fault-Lab.Native` | `Install-Package Virtual-Storage-Fault-Lab.Native -Version 0.1.1` |
-| NuGet | `VirtualStorageFaultLab.SDK` | `dotnet add package VirtualStorageFaultLab.SDK --version 1.0.0` |
-| PyPI | `virtual-storage-fault-lab` | Commande prevue apres publication : `python -m pip install virtual-storage-fault-lab==1.0.0` |
-| Conda | `virtual-storage-fault-lab` | `conda install --override-channels -c https://raw.githubusercontent.com/TitanCSA/sdk-packages/089bc73095aa8eda89bacbe10d0b9e58394b0207/conda-channel -c conda-forge virtual-storage-fault-lab` (canal TitanCSA) |
-| crates.io | `virtual-storage-fault-lab` | `cargo add virtual-storage-fault-lab@1.0.0` |
-| npm | `virtual-storage-fault-lab` | Commande prevue apres publication : `npm install virtual-storage-fault-lab@1.0.0` |
-| Maven Central | `io.github.titancsa:virtual-storage-fault-lab` | `io.github.titancsa:virtual-storage-fault-lab:1.0.0 (pom.xml / Gradle)` |
-| JitPack | `com.github.titanfyre:Virtual-Storage-Fault-Lab` | `com.github.titanfyre:Virtual-Storage-Fault-Lab:java-sdk-v1.0.0 (avec le depot JitPack)` |
-| Go Modules | `github.com/titanfyre/Virtual-Storage-Fault-Lab/Virtual-Storage-Fault-Lab-Go-modules` | `go get github.com/titanfyre/Virtual-Storage-Fault-Lab/Virtual-Storage-Fault-Lab-Go-modules@v1.0.0` |
-| pkg.go.dev | `github.com/titanfyre/Virtual-Storage-Fault-Lab/Virtual-Storage-Fault-Lab-Go-modules` | `Documentation : https://pkg.go.dev/github.com/titanfyre/Virtual-Storage-Fault-Lab/Virtual-Storage-Fault-Lab-Go-modules@v1.0.0` |
-| PowerShell Gallery | `VirtualStorageFaultLab` | `Install-Module VirtualStorageFaultLab -RequiredVersion 1.0.0 -Scope CurrentUser` |
-| pub.dev | `virtual_storage_fault_lab` | Commande prevue apres publication : `dart pub add virtual_storage_fault_lab:1.0.0` |
-| RubyGems | `virtual-storage-fault-lab` | `gem install virtual-storage-fault-lab -v 1.0.0` |
-| Packagist | `titancsa/virtual-storage-fault-lab` | `composer require titancsa/virtual-storage-fault-lab:1.0.0` |
-
-Pour vcpkg et Conan, configure d abord le registre TitanCSA avec [le guide complet](https://github.com/TitanCSA/sdk-packages/tree/main/projects/Virtual-Storage-Fault-Lab/README.md). Le guide explique aussi Maven/Gradle, les prerequis et le chargement des DLL. Les pilotes/applications du produit sont installes separement. Les commandes marquees prevues ne sont pas encore disponibles.
-
-Les anciens imports Go et versions JitPack gardent leurs tags. Pour les anciennes archives SDK, utilise [les liens de remplacement](https://github.com/TitanCSA/sdk-packages/blob/main/release-assets/URL-MIGRATION.json).
+Choose a language in the [SDK and package guide](https://github.com/TitanCSA/sdk-packages/tree/main/projects/Virtual-Storage-Fault-Lab#readme) for exact install commands and examples. If your example requires a driver or app, install it separately.
 <!-- central-sdk-packages:end -->
 
 ## Commercial integration and support
